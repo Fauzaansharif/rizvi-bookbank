@@ -1,185 +1,154 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Previous Question Papers</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="teacher-books.html">Teacher's Recommendations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section>
-      <h2>Upload Your Solutions</h2>
-      <form id="upload-form">
-        <input type="text" placeholder="Subject Name" required />
-        <textarea placeholder="Solution Description" required></textarea>
-        <button type="submit">Upload</button>
-      </form>
-    </section>
-  </body>
-</html> -->
-<!--  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Previous Question Papers</title>
+    <title>Previous Question Papers - Rizvi Book Bank</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <i class="fas fa-book-reader"></i> Rizvi Book Bank
+        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="books.html">Books</a></li>
-          <li><a href="teacher-books.html">Teacher's Recommendations</a></li>
+          <li><a href="teacher-books.html">Teachers</a></li>
+          <li><a href="question-papers.html">Papers</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <h2>Previous Question Papers</h2>
-      <div class="branch">
-        <h3>First-year (common for all)</h3>
+    <main>
+      <h2 class="section-title">Previous Question Papers</h2>
 
-        <div class="year">
-          <h4>First Year (FE)</h4>
-          <ol>
-            <p>SEM 1</p>
-            <li><a href="#">Engineering Mathematics I</a></li>
-            <li><a href="#">Engineering Physics-1</a></li>
-            <li><a href="#">Applied Chemistry-1</a></li>
-            <li><a href="#">Basic Electrical Engineering</a></li>
-            <li><a href="#">Engineering Mechanics</a></li>
-          </ol>
-          <ol>
-            <p>SEM 2</p>
-            <li><a href="#">Engineering Mathematics 2</a></li>
-            <li><a href="#">Engineering Physics-2</a></li>
-            <li><a href="#">Applied Chemistry-2</a></li>
-            <li><a href="#">Engineering Graphics</a></li>
-            <li><a href="#">C Programming</a></li>
-          </ol>
+      <div class="branch hidden">
+        <h3>
+          <i class="fas fa-microchip"></i> Electronics & Computer Science (ECS)
+        </h3>
+        <div class="sem-grid">
+          <div class="semester-group">
+            <h4>Second Year (SE)</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Eng Mathematics - III</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Electronic Devices</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Digital Electronics</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Data Structures</a>
+              </li>
+            </ul>
+          </div>
+          <div class="semester-group">
+            <h4>Third Year (TE)</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Communication Eng</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Comp Org & Arch</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Software Engineering</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Web Technologies</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!-- ECS Branch -->
-      <div class="branch">
-        <h3>Electronics & Computer Science (ECS)</h3>
-
-        <div class="year">
-          <h4>Second Year (SE)</h4>
-          <ol>
-            <p>SEM 3</p>
-            <li><a href="#">Engineering Mathematics - III</a></li>
-            <li><a href="#">Electronic Devices</a></li>
-            <li><a href="#">Digital Electronics</a></li>
-            <li><a href="#">Data Structures and Algorithms</a></li>
-            <li><a href="#">Database Management Systems</a></li>
-          </ol>
-          <ol>
-            <p>SEM 4</p>
-            <li><a href="#">Engineering Mathematics - IV</a></li>
-            <li><a href="#">Electronic Circuits</a></li>
-            <li><a href="#">Controls and Instrumentation</a></li>
-            <li><a href="#">Microprocessors and Microcontrollers</a></li>
-            <li><a href="#">Discrete Structures and Automata Theory</a></li>
-          </ol>
-        </div>
-
-        <div class="year">
-          <h4>Third Year (TE)</h4>
-          <ol>
-            <p>SEM 5</p>
-            <li><a href="#">Communication Engineering</a></li>
-            <li><a href="#">Computer Organization and Architecture</a></li>
-            <li><a href="#">Software Engineering</a></li>
-            <li><a href="#">Web Technologies</a></li>
-          </ol>
-          <ol>
-            <p>SEM 6</p>
-            <li><a href="#">Embedded Systems and RTOS</a></li>
-            <li><a href="#">Artificial Intelligence</a></li>
-            <li><a href="#">Computer Networks</a></li>
-            <li><a href="#">Data Warehousing and Mining</a></li>
-          </ol>
-        </div>
-
-        <div class="year">
-          <h4>Final Year (BE)</h4>
-          <ul>
-            <li><a href="#">Artificial Intelligence</a></li>
-            <li><a href="#">IoT & Cloud Computing</a></li>
-            <li><a href="#">Machine Learning</a></li>
-          </ul>
+      <div class="branch hidden">
+        <h3><i class="fas fa-laptop-code"></i> Computer Science (CS)</h3>
+        <div class="sem-grid">
+          <div class="semester-group">
+            <h4>Second Year (SE)</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Data Structures</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Operating Systems</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> DBMS</a>
+              </li>
+            </ul>
+          </div>
+          <div class="semester-group">
+            <h4>Final Year (BE)</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Blockchain</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-file-pdf"></i> Cyber Security</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-file-pdf"></i> Big Data Analytics</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!-- Computer Science Branch -->
-      <div class="branch">
-        <h3>Computer Science (CS)</h3>
-
-        <div class="year">
-          <h4>Second Year (SE)</h4>
-          <ul>
-            <li><a href="#">Data Structures</a></li>
-            <li><a href="#">Operating Systems</a></li>
-            <li><a href="#">Database Management Systems</a></li>
-          </ul>
-        </div>
-
-        <div class="year">
-          <h4>Third Year (TE)</h4>
-          <ul>
-            <li><a href="#">Computer Networks</a></li>
-            <li><a href="#">Web Technologies</a></li>
-            <li><a href="#">Machine Learning</a></li>
-          </ul>
-        </div>
-
-        <div class="year">
-          <h4>Final Year (BE)</h4>
-          <ul>
-            <li><a href="#">Blockchain & Cryptography</a></li>
-            <li><a href="#">Cyber Security</a></li>
-            <li><a href="#">Big Data Analytics</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Other branches -->
-      <div class="branch">
-        <h3>Artificial Intelligence & Data Science (AIDS)</h3>
-        <p>Coming soon...</p>
-      </div>
-
-      <div class="branch">
-        <h3>Civil Engineering</h3>
-        <p>Coming soon...</p>
-      </div>
-
-      <div class="branch">
-        <h3>Mechanical Engineering</h3>
-        <p>Coming soon...</p>
-      </div>
-    </section>
+      <section class="form-container hidden" style="margin-top: 3rem">
+        <h3 style="text-align: center; color: var(--primary-color)">
+          Contribute
+        </h3>
+        <p style="text-align: center; margin-bottom: 1rem">
+          Have a paper we missed? Upload your solution or question paper here.
+        </p>
+        <form id="upload-form">
+          <div class="form-group">
+            <label>Subject Name</label>
+            <input type="text" placeholder="e.g. Applied Maths 3" required />
+          </div>
+          <div class="form-group">
+            <label>Description / Drive Link</label>
+            <textarea
+              placeholder="Paste Google Drive link or description..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Contribution</button>
+        </form>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2025 Rizvi Book Bank</p>
+      <p>
+        &copy; 2025 Rizvi Book Bank. Built by Fauzaan, Rehan, Hasan and Saad.
+      </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

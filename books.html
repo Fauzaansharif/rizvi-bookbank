@@ -2,111 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Available Books</title>
+    <title>Available Books - Rizvi Book Bank</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <i class="fas fa-book-reader"></i> Rizvi Book Bank
+        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="teacher-books.html">Teachers</a></li>
+          <li><a href="question-papers.html">Papers</a></li>
           <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="teacher-books.html">Teacher's Recommendations</a></li>
-          <li><a href="question-papers.html">Question Papers</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="books">
-      <h2>Available Books</h2>
-      <div class="branch">
-        <h3>First Year</h3>
-        <ol>
-          <p>Sem 1</p>
-          <li>Applied Mathematic-1</li>
-          <li>Applied Physics-1</li>
-          <li>Applied Chemistry-1</li>
-          <li>Basic Electrical Engineering</li>
-          <li>Engineering Mechanics</li>
-        </ol>
-        <ol>
-          <p>Sem 2</p>
-          <li>Applied Mathematic-1</li>
-          <li>Applied Physics-1</li>
-          <li>Applied Chemistry-1</li>
-          <li>Engineering Graphics</li>
-          <li>C Programming</li>
-        </ol>
-      </div>
-      <div class="branch">
-        <h3>Electronics & Computer Science</h3>
-        <ol>
-          <p>SE (Sem 3)</p>
-          <li>Engineering Mathematics - III</li>
-          <li>Electronic Devices</li>
-          <li>Digital Electronics</li>
-          <li>Data Structures and Algorithms</li>
-          <li>Database Management Systems</li>
-        </ol>
-        <ol>
-          <p>SE (Sem 4)</p>
-          <li>Engineering Mathematics - IV</li>
-          <li>Electronic Circuits</li>
-          <li>Controls and Instrumentation</li>
-          <li>Microprocessors and Microcontrollers</li>
-          <li>Discrete Structures and Automata Theory</li>
-        </ol>
-        <ol>
-          <p>TE (Sem 5)</p>
-          <li>Communication Engineering</li>
-          <li>Computer Organization and Architecture</li>
-          <li>Software Engineering</li>
-          <li>Web Technologies</li>
-        </ol>
-        <ol>
-          <p>TE (Sem 6)</p>
-          <li>Embedded Systems and RTOS</li>
-          <li>Artificial Intelligence</li>
-          <li>Computer Networks</li>
-          <li>Data Warehousing and Mining</li>
-        </ol>
-      </div>
-      <div class="branch">
-        <h3>Computer Science</h3>
-        <ul>
-          <li>SE</li>
-          <li>TE</li>
-          <li>BE</li>
-        </ul>
-      </div>
-      <div class="branch">
-        <h3>AIDS</h3>
-        <ul>
-          <li>SE</li>
-          <li>TE</li>
-          <li>BE</li>
-        </ul>
-      </div>
-      <div class="branch">
-        <h3>Civil</h3>
-        <ul>
-          <li>SE</li>
-          <li>TE</li>
-          <li>BE</li>
-        </ul>
-      </div>
-      <div class="branch">
-        <h3>Mechanical</h3>
-        <ul>
-          <li>SE</li>
-          <li>TE</li>
-          <li>BE</li>
-        </ul>
+    <main>
+      <h2 class="section-title">Available Books by Branch</h2>
+
+      <div class="branch hidden">
+        <h3>
+          <i class="fas fa-microchip"></i> Electronics & Computer Science (ECS)
+        </h3>
+
+        <div class="sem-grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Electronics"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h4 style="color: var(--primary-color)">SE (Semester 3)</h4>
+              <ul style="margin-top: 10px; list-style-type: none; padding: 0">
+                <li>
+                  <i class="fas fa-book"></i> Engineering Mathematics - III
+                </li>
+                <li><i class="fas fa-book"></i> Electronic Devices</li>
+                <li><i class="fas fa-book"></i> Digital Electronics</li>
+                <li>
+                  <i class="fas fa-book"></i> Data Structures & Algorithms
+                </li>
+                <li><i class="fas fa-book"></i> Database Management Systems</li>
+              </ul>
+              <a href="#" class="btn" style="margin-top: auto">View Details</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Coding"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h4 style="color: var(--primary-color)">TE (Semester 5)</h4>
+              <ul style="margin-top: 10px; list-style-type: none; padding: 0">
+                <li><i class="fas fa-book"></i> Communication Engineering</li>
+                <li><i class="fas fa-book"></i> Comp. Org & Architecture</li>
+                <li><i class="fas fa-book"></i> Software Engineering</li>
+                <li><i class="fas fa-book"></i> Web Technologies</li>
+              </ul>
+              <a href="#" class="btn" style="margin-top: auto">View Details</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!--  -->
-    </section>
+      <div class="branch hidden">
+        <h3>
+          <i class="fas fa-user-graduate"></i> First Year (FE) - All Branches
+        </h3>
+        <div class="sem-grid">
+          <div class="card">
+            <div class="card-header">Semester 1</div>
+            <div class="card-body">
+              <ol>
+                <li>Applied Mathematics-I</li>
+                <li>Applied Physics-I</li>
+                <li>Applied Chemistry-I</li>
+                <li>Basic Electrical Eng.</li>
+                <li>Engineering Mechanics</li>
+              </ol>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Semester 2</div>
+            <div class="card-body">
+              <ol>
+                <li>Applied Mathematics-II</li>
+                <li>Applied Physics-II</li>
+                <li>Applied Chemistry-II</li>
+                <li>Engineering Graphics</li>
+                <li>C Programming</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Rizvi Book Bank.</p>
+      <p>Built by Fauzaan, Rehan, Hasan and Saad</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

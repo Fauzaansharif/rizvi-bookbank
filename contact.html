@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Us - Rizvi Book Bank</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="fas fa-book-reader"></i> Rizvi Book Bank
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="teacher-books.html">Teachers</a></li>
+          <li><a href="question-papers.html">Papers</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container hidden">
+        <h2 style="text-align: center; color: var(--primary-color)">
+          Contact Us
+        </h2>
+        <p style="margin-bottom: 20px; text-align: center; color: #666">
+          Have a book to donate or a question? Reach out to us.
+        </p>
+        <form>
+          <div class="form-group">
+            <label for="subject"><i class="fas fa-heading"></i> Subject</label>
+            <input
+              type="text"
+              id="subject"
+              required
+              placeholder="What is this regarding?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment"></i> Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              required
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn" style="width: 100%">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Rizvi Book Bank.</p>
+      <p>Built by Fauzaan, Rehan, Hasan and Saad</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

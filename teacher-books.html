@@ -3,29 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher's Recommended Books</title>
+    <title>Teacher's Corner | Rizvi Book Bank</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
+        <div class="logo">
+          <i class="fas fa-book-reader"></i> Rizvi Book Bank
+        </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="books.html">Books</a></li>
-          <li><a href="question-papers.html">Question Papers</a></li>
+          <li><a href="teacher-books.html">Teachers</a></li>
+          <li><a href="question-papers.html">Papers</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <h2>Teacher's Recommended Books</h2>
-      <ul>
-        <li>Advanced Engineering Mathematics - Dr. Erwin Kreyszig</li>
-        <li>Computer Networking - Andrew Tanenbaum</li>
-        <li>Artificial Intelligence - Stuart Russell & Peter Norvig</li>
-      </ul>
-    </section>
+    <div class="main">
+      <div style="max-width: 1200px; margin: 2rem auto; padding: 0 1rem">
+        <h2 class="section-title">Faculty Recommendations & Notes</h2>
+
+        <div class="grid-container">
+          <div class="card">
+            <div class="card-header">Rec: Prof. Ahmed (ECS Dept)</div>
+            <img
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Code"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="book-title">Data Structures in Java</h3>
+              <p class="book-author">By Robert Lafore</p>
+              <div class="teacher-note">
+                "This book simplifies Trees and Graphs better than the standard
+                syllabus text. Highly recommended for 3rd Year."
+              </div>
+              <a href="#" class="btn"
+                ><i class="fas fa-download"></i> Download PDF</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Rec: Prof. Sharma (Mech Dept)</div>
+            <img
+              src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Mechanics"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="book-title">Fluid Mechanics Vol. 2</h3>
+              <p class="book-author">By R.K. Bansal</p>
+              <div class="teacher-note">
+                "Focus on Chapter 4 and 5 for the upcoming finals. This copy
+                contains my handwritten annotations."
+              </div>
+              <a href="#" class="btn"
+                ><i class="fas fa-calendar-check"></i> Request Copy</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Rec: Dr. Khan (Civil Dept)</div>
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Civil"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="book-title">Surveying and Levelling</h3>
+              <p class="book-author">By N.N. Basak</p>
+              <div class="teacher-note">
+                "A classic text. I have donated 3 copies to the library section.
+                First come, first serve."
+              </div>
+              <a href="#" class="btn"
+                ><i class="fas fa-map-marker-alt"></i> Check Availability</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Rizvi Book Bank. Built by Fauzaan, Rehan, Hasan, and Saad.
+      </p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

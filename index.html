@@ -3,50 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rizvi Book Bank</title>
+    <title>Home - Rizvi Book Bank</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Rizvi Book Bank</h1>
       <nav>
+        <div class="logo">
+          <i class="fas fa-book-reader"></i> Rizvi Book Bank
+        </div>
         <ul>
-          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="books.html">Books</a></li>
-          <li><a href="teacher-books.html">Teacher's Recommendations</a></li>
-          <li><a href="question-papers.html">Question Papers</a></li>
+          <li><a href="teacher-books.html">Teachers</a></li>
+          <li><a href="question-papers.html">Papers</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <h2>Welcome to Rizvi Book Bank</h2>
-      <p>
-        A platform for students to get engineering books easily within the
-        college.
-      </p>
-      <p id="abstract">
-        The Rizvi College Book Management System is a web-based platform
-        designed to streamline the process of distributing academic books among
-        engineering students. First-year students sign up, make a one-time
-        payment, and receive books that are used throughout their four-year
-        course. Upon graduation, they pass these books down to their juniors,
-        ensuring a sustainable, cost-effective system that reduces waste and
-        makes books readily available within the college. The system categorizes
-        books based on different branches—Electronics & Computer Science,
-        Computer Science, Artificial Intelligence & Data Science, Civil
-        Engineering, and Mechanical Engineering—allowing easy access to relevant
-        materials. The platform includes features like user registration, book
-        search functionality, and an intuitive UI to enhance user experience. By
-        digitizing the book-sharing process, this system not only saves
-        students' time and money but also promotes resource optimization within
-        Rizvi College of Engineering.
-      </p>
-    </section>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Rizvi Book Bank</h1>
+        <p>
+          A collaborative platform for students to share knowledge, textbooks,
+          and resources.
+        </p>
+        <a href="books.html" class="btn"
+          >Browse Books <i class="fas fa-arrow-right"></i
+        ></a>
+      </section>
+
+      <section class="branch hidden">
+        <h3><i class="fas fa-info-circle"></i> About the Initiative</h3>
+        <p>
+          This platform aims to help engineering students at Rizvi College find
+          textbooks, question papers, and recommendations easily. Reduce waste,
+          save money, and help your juniors!
+        </p>
+      </section>
+
+      <section class="branch hidden" style="text-align: center">
+        <h3>Join the Community</h3>
+        <p>Over 500+ books shared by seniors.</p>
+        <a href="signup.html" class="btn">Create Account</a>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2025 Rizvi Book Bank</p>
+      <p>&copy; 2025 Rizvi Book Bank.</p>
+      <p>Built by Fauzaan, Rehan, Hasan and Saad</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
