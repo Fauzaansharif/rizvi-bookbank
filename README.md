@@ -39,10 +39,11 @@ rizvi-bookbank/
 Future Improvements
 Backend Integration: implementing a Node.js/Express backend to handle real user authentication and database storage.
 Search Functionality: Real-time filtering of books by author or subject.
+```
 
 Contributors
 Built with love by the Final Year ECS Team:
-Fauzaan
-Hasan
-Rehan
-Saad
+Fauzaan Sharif
+Hasan Khan
+Rehan Sayed
+Saad Shaikh
